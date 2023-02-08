@@ -51,6 +51,7 @@ end
 # sorted by heat level from lowest to highest
 def sort_by_heat(spicy_foods)
   # your code here
+  spicy_foods.find { |spicy_food| spicy_food[:cuisine] == cuisine }
 end
 
 # given an array of spicy foods, output to the terminal ONLY 
