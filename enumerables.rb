@@ -61,6 +61,12 @@ end
 # HINT: Try to use methods you've already written to solve this!
 def print_spiciest_foods(spicy_foods)
   # your code here
+  spiciest_foods = spicy_foods.select { |sfood| sfood[:heat_level].to_i > 5 }
+  spiciest_foods.each do |sfood|
+    emoji = "🌶" * sfood[:heat_level].to_i
+    puts "#{sfood[:name]} (#{sfood[:cuisine]}) | Heat Level: #{emoji}"
+  end
+
 end
 
 # given an array of spicy foods, return an integer representing 
