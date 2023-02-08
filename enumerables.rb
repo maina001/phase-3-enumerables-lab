@@ -52,7 +52,7 @@ end
 # sorted by heat level from lowest to highest
 def sort_by_heat(spicy_foods)
   # your code here
-
+  spicy_foods.sort_by { |spicy_food| spicy_food[:heat_level]}
 end
 
 # given an array of spicy foods, output to the terminal ONLY 
